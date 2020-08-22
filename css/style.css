@@ -162,7 +162,7 @@ body{
 }
 .contactButton:hover{
     text-decoration: none;
-    color: #3498db;
+    color: var(--base);
     background-color: white;
 }
 
