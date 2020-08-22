@@ -184,6 +184,15 @@ body{
     border-color: var(--base);
     background-color: var(--base);
 }
+.filter{
+    text-align: center;
+    width: 100%;
+}
+.section .heading{
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+}
 
 /* Copyright Section */
 .copyrightSection{
