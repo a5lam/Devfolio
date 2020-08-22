@@ -1,3 +1,8 @@
+
+:root{
+    --base:#3498db;
+}
+
 body{
     font-size: 14px;
     color: #333;
@@ -69,7 +74,7 @@ body{
 /* Technical Skills Section */
 .skillsSection,
 .contactSection {
-    background-color:#3498db;
+    background-color:var(--base);
     color: white;
 }
 .skill{
@@ -128,7 +133,7 @@ body{
     font-size: 56px;
     margin-bottom: 10px;
     font-weight: 400;
-    color: #3498db;
+    color: var(--base);
 }
 .squareInnerContainer h3{
     font-size: 13px;
@@ -169,5 +174,6 @@ body{
     padding: 30px 5px;
 }
 .copyrightSection p{
-    margin: 0;
+    margin: 0
+    ;
 }
