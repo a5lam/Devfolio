@@ -67,7 +67,8 @@ body{
 }
 
 /* Technical Skills Section */
-.skillsSection{
+.skillsSection,
+.contactSection {
     background-color:#3498db;
     color: white;
 }
