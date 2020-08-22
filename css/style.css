@@ -229,6 +229,12 @@ body{
     background-color: var(--base);
     position: relative;
     display: inline-block;
+
+    -webkit-transition: all 0.2s linear, 0.2s;
+    -moz-transition: all 0.2s linear, 0.2s;
+    -o-transition: all 0.2s linear, 0.2s;
+    -transition: all 0.2s linear, 0.2s;
+
 }
 .items .imageOverlay{
     width: 100%;
@@ -238,16 +244,33 @@ body{
     left: 0;
     top: 0;
     opacity: 0;
+    
     -webkit-transition: all 0.2s linear, 1s;
     -moz-transition: all 0.2s linear, 1s;
     -o-transition: all 0.2s linear, 1s;
     -transition: all 0.2s linear, 1s;
 
-
 }
 .items .item:hover .imageOverlay{
     opacity: 1;
 }
+.items .projectLink{
+    float: right;
+    right: -200px;
+}
+.items .openButton{
+    float: left;
+    left: -200px;
+}
+.items .item:hover .openButton{
+    left:0;
+}
+.items .item:hover .projectLink{
+    right:0;
+}
+
+
+
 
 
 /* Copyright Section */
