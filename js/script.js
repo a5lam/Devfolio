@@ -48,4 +48,10 @@ $( document ).ready(function() {
             });
         };
     });
+
+    $('.counter').each(function(){
+        var ele = $(this);
+        var endVal = parseInt(ele.text());
+        ele.countup(endVal);
+    });
 });
