@@ -62,6 +62,31 @@ body{
     font-size: 23px;
 }
 
+
+/* Navigation bar */
+
+#navigation{
+    background-color: var(--base);
+    padding: 20px 10px;
+    z-index: 100;
+}
+
+#navigation li{
+    padding: 0 10px;
+}
+
+#navigation li a{
+    color: white;
+}
+.navbar-brand,
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-toggler-icon{
+    background: url(../img/icons/menu.png);
+    background-size: 100%;
+}
+
 /* About Me */
 .section{
     padding: 100px 0;
@@ -168,6 +193,9 @@ body{
 }
 
 /* Portfolio Section */
+.bg-light-gray {
+    background-color: #eeeeee;
+}
 .filter a{
     color: var(--portColor);
     border: 1px solid var(--portColor);
