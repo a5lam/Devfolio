@@ -1,9 +1,12 @@
+
+// gif added as pre-loader
 $(window).on('load', function() {
    
     $('.loader .inner').fadeOut(500, function(){
         $('.loader').fadeOut(750);
     });
 
+    // loading all the portfolio images with preloader
     $('.items').isotope({
         filter: '*',
         animationOptions: {
@@ -15,6 +18,7 @@ $(window).on('load', function() {
 
 });
 
+// Slides animation
 $( document ).ready(function() {
     $('#slides').superslides({
         animation:  'fade',
@@ -22,6 +26,7 @@ $( document ).ready(function() {
         pagination: false
     });
 
+    // subtitle animation
     var typed = new Typed('.typed',{
         strings: ['Software Engineer.', 'Web Developer.', 'Student.'],
         typeSpeed: 70,
@@ -30,6 +35,7 @@ $( document ).ready(function() {
         showCursor: false
     });
 
+    // skills slider
     $('.owl-carousel').owlCarousel({
         items:4,
         loop:true,
@@ -59,12 +65,13 @@ $( document ).ready(function() {
         owl.trigger('stop.owl.autoplay')
     });
         
-  
+    
     var skillsTopOffset = $('.skillsSection').offset().top;
     var statsTopOffset = $('.statsSection').offset().top;
     var countUp = false
     $(window).scroll( function(){
 
+        // skills pie-chart animation
         if (window.pageYOffset > skillsTopOffset - $(window).height() + 200){
             $('.chart').easyPieChart({
                 easing:'easeInOut',
@@ -79,6 +86,7 @@ $( document ).ready(function() {
             });
         };
 
+        // skills number counter
         if (!countUp && window.pageYOffset > statsTopOffset - $(window).height() + 200){
             $('.counter').each(function(){
                 var ele = $(this);
@@ -89,9 +97,10 @@ $( document ).ready(function() {
         };
     });
 
+    // portfolio box layout
     $('[data-fancybox]').fancybox();
 
-
+    // Portfolio filtering 
     $('#filters a').click(function() {
 
         $('#filters .current').removeClass('current');
@@ -113,14 +122,17 @@ $( document ).ready(function() {
 
     const nav = $('#navigation');
     const navTop = nav.offset().top;
+    const navHeight = nav.outerHeight();
 
+    // scroll animation for navigation bar
     $(window).on('scroll', stickyNavigation);
 
+    // align top offset with nav bar
     function stickyNavigation() {
         var body = $('body');
 
         if($(window).scrollTop() >= navTop) {
-            body.css('padding-top', nav.outerHeight()+'px');
+            body.css('padding-top', navHeight +'px');
             body.addClass('fixedNav');
         }
         else {
@@ -133,9 +145,13 @@ $( document ).ready(function() {
     $('#navigation li a').click( function(e) {
         e.preventDefault();
 
+        // collapse navigation menu
+        $('.navbar-collapse').collapse('hide');
+
         var targetElement = $(this).attr('href');
         var targetPosition = $(targetElement).offset().top;
-        $('html, body').animate({scrollTop: targetPosition - nav.outerHeight()}, 'slow');
+        $('html, body').animate({scrollTop: targetPosition - navHeight}, 'slow');
+
     });
 
 });
