@@ -1,3 +1,20 @@
+$(window).on('load', function() {
+   
+    $('.loader .inner').fadeOut(500, function(){
+        $('.loader').fadeOut(750);
+    });
+
+    $('.items').isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 1500,
+            easing: 'linear',
+            queue: false
+        }
+    });
+    
+});
+
 $( document ).ready(function() {
     $('#slides').superslides({
         animation:  'fade',
@@ -117,4 +134,5 @@ $( document ).ready(function() {
         var targetPosition = $(targetElement).offset().top;
         $('html, body').animate({scrollTop: targetPosition - nav.outerHeight()}, 'slow');
     });
+
 });
