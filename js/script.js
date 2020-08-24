@@ -123,15 +123,19 @@ $( document ).ready(function() {
     const nav = $('#navigation');
     const navTop = nav.offset().top;
     const navHeight = nav.outerHeight();
+    const sectionLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    var activeOn = true;
+    $(window).on('scroll', scrollNavigation);
 
-    // scroll animation for navigation bar
-    $(window).on('scroll', stickyNavigation);
-
-    // align top offset with nav bar
-    function stickyNavigation() {
+    
+    function scrollNavigation() {
+        
         var body = $('body');
 
+        // scroll animation for navigation bar
         if($(window).scrollTop() >= navTop) {
+            // align top offset with nav bar
             body.css('padding-top', navHeight +'px');
             body.addClass('fixedNav');
         }
@@ -140,8 +144,26 @@ $( document ).ready(function() {
             body.removeClass('fixedNav');
         }
 
-    }
+        // Change active tab on nav bar
+        sectionLinks.forEach(function(e) {
 
+            var sectionId = e.getAttribute('href');
+            
+            if ($(sectionId).visible() || $(sectionId).visible(true)){
+            
+                $('.navbar-nav li').removeClass('active');
+                console.log($('.nav li'));
+                $(e.parentElement).addClass('active');
+                    // activeOn = true;
+            }
+            
+            
+        });
+
+
+    }
+    
+    
     $('#navigation li a').click( function(e) {
 
         // collapse navigation menu

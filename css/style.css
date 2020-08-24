@@ -116,6 +116,17 @@ body{
     background: url(../img/icons/menu.png);
     background-size: 100%;
 }
+.active > a {
+    border-radius: 0;
+    color: white;
+    background-color: #fed136;
+  }
+  .navbar-custom .navbar-nav > .active > a:hover,
+  .navbar-custom .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #fec503;
+  }
+
 .fixedNav #navigation{
     position: fixed;
     top: 0;
@@ -165,7 +176,7 @@ body{
 }
 
 .chart .percent{
-    color: white;
+    color: var(--navFont);
     line-height: 152px;
     display: inline-block;
     font-size: 35px;
@@ -411,7 +422,7 @@ body{
 .copyrightSection{
     background-color: #000;
     color:#fff;
-    padding: 30px 5px;
+    padding: 40px 5px;
 }
 .copyrightSection p{
     margin: 0;
