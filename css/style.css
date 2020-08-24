@@ -2,6 +2,8 @@
 :root{
     --portColor:#ccc9dcff; 
     --nav: #000000ff;
+    --navFont: #fed136;
+    --navHover: #fec503;
     --base1: #0c1821ff;
     --base2: #1b2a41ff;
     --base3: #324a5fff;
@@ -92,13 +94,23 @@ body{
 #navigation li{
     padding: 0 10px;
 }
-
+#navigation a:hover{
+    color: var(--navHover);
+}
 #navigation li a{
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
     color: white;
 }
 .navbar-brand,
 .navbar-brand:hover{
     color: white;
+}
+.navbar .navbar-brand {
+    color: var(--navFont);
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-toggler-icon{
     background: url(../img/icons/menu.png);

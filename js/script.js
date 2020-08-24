@@ -143,14 +143,16 @@ $( document ).ready(function() {
     }
 
     $('#navigation li a').click( function(e) {
-        e.preventDefault();
 
         // collapse navigation menu
         $('.navbar-collapse').collapse('hide');
 
-        var targetElement = $(this).attr('href');
-        var targetPosition = $(targetElement).offset().top;
-        $('html, body').animate({scrollTop: targetPosition - navHeight}, 'slow');
+        // scroll on click with easing animation
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
 
     });
 
