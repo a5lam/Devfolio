@@ -209,6 +209,7 @@ h4{
     line-height: 152px;
     display: inline-block;
     font-size: 35px;
+    font-family: Helvetica, sans-serif;
 }
 .chart .percent:after{
     content: '%';
@@ -425,13 +426,15 @@ h4{
     color: white;
 }
 .contactSection .contactButton{
-    border: 2px solid var(--navHover);
-    border-radius: 2px;
-    display: inline-block;
-    padding: 20px 30px;
-    font-weight: 700;
     color: white;
     background-color: var(--navFont);
+    border-color: var(--navHover);
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
 }
 .contactSection .contactButton:hover{
     text-decoration: none;
