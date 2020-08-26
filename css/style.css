@@ -11,6 +11,7 @@
 
 body{
     font-size: 14px;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
     background-color: #fff;
     letter-spacing: 1px;
@@ -30,13 +31,33 @@ body{
     background: url(../img/loader.gif) center center no-repeat;
     background-size: 35px 35px;
 }
+h2{
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h4{
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.section-subheading {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
 /* slides */
 .overlay{
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 3;
-    background-color: rgba(0, 0 , 0, 0.4);
+    background-color: rgba(0, 0 , 0, 0.5);
 }
 .slides-navigation{
     z-index: 6;
@@ -142,16 +163,22 @@ body{
     text-transform: none;
     min-height: 40px;
 }
-  
+
 .service-item {
-    height: 350px;
+    display: flex;
+    /* height: 350px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 50px;
 }
 
 
 /* Technical Skills Section */
 .skillsSection,
 .contactSection {
-    background-color:var(--base1);
+    background-color:var(--nav);
     color: white;
     padding: 100px 0 50px 0;
 }
@@ -162,10 +189,7 @@ body{
 .skill h4{
     margin-top: 35px;
 }
-.skillsSection p{
-    margin-top: 0;
-    margin-bottom: 2rem;
-}
+
 .chart{
     position: relative;
     width: 152px;
@@ -404,6 +428,7 @@ body{
     border-radius: 2px;
     display: inline-block;
     padding: 20px 30px;
+    font-weight: 700;
     color: white;
     background-color: var(--navFont);
 }
