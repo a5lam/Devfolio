@@ -149,6 +149,22 @@ $( document ).ready(function() {
 
     });
 
+    $(".navbar-brand").on("click", function(){
+        
+        
+        // collapse navigation menu
+        $('.navbar-collapse').collapse('hide');
+        
+        // scroll on click with easing animation
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - navHeight)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+
+
+    });
+
     var activeOn = 0;
     $(window).on('scroll', scrollNavigation);
 
