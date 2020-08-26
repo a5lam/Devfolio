@@ -145,7 +145,7 @@ $( document ).ready(function() {
         // change avtive tab on nav bar
         $(".navbar-nav").find(".active").removeClass("active");
         $(e).parent().addClass("active");
-        },1250);
+        },1300);
 
     });
 

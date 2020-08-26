@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Portfolio</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+
+
+    <title>Software Developer Portfolio | JavaScript, Python and more.</title>
+    <meta name="description" content="Front-end developer specialized in JavaScript, jQuery and Python. I provide services such as application development, API integration and development and database design.">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Software Developer Portfolio | JavaScript, Python and more." />
+    <meta property="og:description" content="Front-end developer specialized in JavaScript, jQuery and Python. I provide services such as application development, API integration and development and database design." />
+    <meta property="og:url" content="https://a5lam.github.io/Devfolio/" />
+    
+
+   
     <link rel="stylesheet" href="css/superslides.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
@@ -52,8 +67,11 @@
           <ul class="navbar-nav mr-auto">
             
             <li class="nav-item active">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#services">What I do</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="#stats">Stats</a>
             </li>
@@ -71,6 +89,58 @@
         </div>
 
     </nav>
+
+     <!-- Services Section -->
+     <div id="services" class="servicesSection section">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-heading">What I do</h2>
+                    <h3 class="section-subheading text-muted">Things I'm skilled at and passionate about.</h3>
+                </div>
+            </div>
+            
+            <div class="row text-center">               
+                <div class="col-md-6 service-item">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Application <br class="hidden-xs hidden-sm hidden-md"/>Development</h4>
+                    <p class="text-muted">Fast, responsive and engaging apps that bring your ideas to life.</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Mobile Application <br class="hidden-xs hidden-sm hidden-md"/>Development</h4>
+                    <p class="text-muted">Cross-platform apps built with efficiency and speed for Android and iOS at once.</p>
+                </div>          
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-md-6 service-item">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">API Integration & <br class="hidden-xs hidden-sm hidden-md"/>Development</h4>
+                    <p class="text-muted">REST and SOAP API integration.<br/>REST API development with Node.js and Loopback.</p>
+                </div>
+                <div class="col-md-6 service-item">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Database Design</h4>
+                    <p class="text-muted">Database architectures in MongoDB, MySQL or Parse Server, always aiming for performance, scale and stability.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <!-- Skills Section -->
     <div id="skills" class="skillsSection section">
@@ -392,13 +462,33 @@
     </div>
 
     <!-- About Section -->
-    <div id="about" class="section">
+    <div id="about" class=" aboutSection section bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
-                    <img class="aboutImage" src="img/about.jpg" alt="" height="400"  >
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Me</h2>
+                    <h3 class="section-subheading text-muted">Let's break the ice a little.</h3>
                 </div>
-                <div class="col-md-7">
+            </div>
+            <div class="row">
+                
+                <div class="team-member">
+                    <img src="img/about.png" class="img-responsive img-circle" alt="Aslam Shaikh's photo">
+                    <h4>Aslam Shaikh</h4>
+                    <p class="text-muted">Developer | JavaScript | Python</p>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://github.com/a5lam" target="_blank"><i class="fab fa-github fa-2x social-button"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/a5lamm" target="_blank"><i class="fab fa-twitter fa-2x social-button"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/aslam-shaikh-2654a6ab/" target="_blank"><i class="fab fa-linkedin fa-2x social-button"></i></a>
+                        </li>
+                    </ul>
+                </div>   
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
                     <h4>My name is Aslam Shaikh</h4>
                     <p>Hi there! I'm Aslam Shaikh from Gujarat, India. I am currently looking for work. I have experience creating software, mobile apps and websites for both myself, and for clients. I have experience programming in many different languages such as C, C++, Java, HTML, CSS and PHP, however some of my favourite projects involve working in Python and Javascript.</p>
 					<p>I graduated from Guajarat University, India with first class (3.6 GPA) in electronics and communication engineering and also spent two year doing master's in electrical and computer engineering at Carleton University in Ottawa, Canada. </p>
@@ -411,48 +501,17 @@
     <div id="contact" class="contactSection section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Me</h2>
-                    <h3 class="section-subheading text-muted">I'd love to hear from you.</h3>
+                
+                <div class="col-md-12 text-center">
+            
+                    <p class="subHeading">Like what you see?</p>
+                    <h2 class="heading">I'd love to hear from you!</h2>
+                    <a href="mailTo:aslamshaikh524@gmail.com" class="contactButton">GET IN TOUCH!</a>
+        
                 </div>
+               
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form method="post" action="/contact" name="sentMessage" id="contactForm">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" name="name" id="name">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="emailLKJH" class="form-control" placeholder="Your Email *" name="correioEletronico" id="correioEletronico">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="ohnohoney" placeholder="Your Email *" name="email" id="email">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject *" name="subject" id="subject">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" name="message" id="message"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+           
         </div>
     </div>
 
@@ -475,6 +534,7 @@
     <script src="js/typed.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/script.js"></script>

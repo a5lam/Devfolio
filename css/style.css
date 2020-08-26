@@ -1,7 +1,7 @@
 
 :root{
     --portColor:#ccc9dcff; 
-    --nav: #000000ff;
+    --nav: #1f1e1e;
     --navFont: #fed136;
     --navHover: #fec503;
     --base1: #0c1821ff;
@@ -101,7 +101,8 @@ body{
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    padding: 10px 0 10px;
     color: white;
 }
 .navbar-brand,
@@ -116,14 +117,15 @@ body{
     background: url(../img/icons/menu.png);
     background-size: 100%;
 }
-.active  a {
-    border-radius: 1px;
+#navigation .active{
+    border-radius: 2px;
     color: white;
     background-color: var(--navFont);
     border-color: var(--navHover);
 }
 #navigation .navbar-nav .active > a:hover,
-#navigation .navbar-nav .active  a:focus {
+#navigation .navbar-nav .active  a:focus,
+#navigation .active:hover {
     color: white;
     background-color: var(--navHover);
 }
@@ -134,17 +136,17 @@ body{
     top: 0;
 }
 
-
-
-/* About Me */
-.section{
-    padding: 100px 0;
+/* Service Section */
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+    min-height: 40px;
+}
+  
+.service-item {
+    height: 350px;
 }
 
-.aboutImage{
-    max-width: 100%;
-    max-height: 100%;
-}
 
 /* Technical Skills Section */
 .skillsSection,
@@ -234,64 +236,7 @@ body{
     margin-left: -20%;
     color: #444;
 }
-
-/* Contact Section */
-
-.contactSection {
-    background-color: #222222;
-    background-image: url('../img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .contactSection .section-heading {
-    color: white;
-  }
-  .contactSection .form-group {
-    margin-bottom: 25px;
-  }
-  .contactSection .form-group input,
-  .contactSection .form-group textarea {
-    padding: 20px;
-  }
-  .contactSection .form-group input.form-control {
-    height: auto;
-  }
-  .contactSection .form-group textarea.form-control {
-    height: 236px;
-  }
-  .contactSection .form-control:focus {
-    border-color: #fed136;
-    box-shadow: none;
-  }
-  .contactSection ::-webkit-input-placeholder {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #ccc;
-  }
-  .contactSection :-moz-placeholder {
-    /* Firefox 18- */
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #ccc;
-  }
-  .contactSection ::-moz-placeholder {
-    /* Firefox 19+ */
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #ccc;
-  }
-  .contactSection :-ms-input-placeholder {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #ccc;
-  }
-  .contactSection .text-danger {
-    color: #e74c3c;
-  }
+  
 
 /* Portfolio Section */
 .bg-light-gray {
@@ -419,6 +364,54 @@ body{
 }
 
 
+/* About Me */
+.section{
+    padding: 100px 0;
+}
+.team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.team-member img {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    border: 7px solid white;
+}
+.team-member .social-buttons{
+    display: flex;
+}
+.team-member .social-button{
+    padding: 0 5px 0 5px;
+    color: var(--nav);
+
+}
+
+/* Contact Section */
+
+.contactSection {
+    background-color: #222222;
+    background-image: url('../img/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.contactSection .contactButton{
+    border: 2px solid var(--navHover);
+    border-radius: 2px;
+    display: inline-block;
+    padding: 20px 30px;
+    color: white;
+    background-color: var(--navFont);
+}
+.contactSection .contactButton:hover{
+    text-decoration: none;
+    color: white;
+    background-color: var(--navHover);
+}
 
 /* Copyright Section */
 .copyrightSection{
