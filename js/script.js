@@ -67,7 +67,7 @@ $( document ).ready(function() {
         
     
     var skillsTopOffset = $('.skillsSection').offset().top;
-    var statsTopOffset = $('.statsSection').offset().top;
+    var potfolioTopOffset = $('.portfolioSection').offset().top;
     var countUp = false
     $(window).scroll( function(){
 
@@ -87,7 +87,7 @@ $( document ).ready(function() {
         };
 
         // skills number counter
-        if (!countUp && window.pageYOffset > statsTopOffset - $(window).height() + 200){
+        if (!countUp && window.pageYOffset > potfolioTopOffset - $(window).height() + 200){
             $('.counter').each(function(){
                 var ele = $(this);
                 var endVal = parseInt(ele.text());
